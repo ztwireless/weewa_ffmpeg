@@ -1,0 +1,14 @@
+prefix=/home/mgc/Downloads/ffmpeg-4.4.4/build_install
+exec_prefix=${prefix}
+libdir=/home/mgc/Downloads/ffmpeg-4.4.4/build_install/lib
+includedir=/home/mgc/Downloads/ffmpeg-4.4.4/build_install/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.70.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm -latomic
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/home/mgc/Downloads/ffmpeg-4.4.4/build_install
+exec_prefix=${prefix}
+libdir=/home/mgc/Downloads/ffmpeg-4.4.4/build_install/lib
+includedir=/home/mgc/Downloads/ffmpeg-4.4.4/build_install/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 3.9.100
+Requires: 
+Requires.private: libavutil >= 56.70.100
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}
